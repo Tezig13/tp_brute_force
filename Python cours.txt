@@ -1,0 +1,131 @@
+										POUR PYTHON A APPRENDRE
+
+s = "Python"
+
+ 								Méthodes des chaînes de caractères (str)
+
+s.capitalize()     # Met la première lettre en majuscule
+s.lower()          # Convertit la chaîne en minuscules
+s.upper()          # Convertit la chaîne en majuscules
+s.title()          # Met la première lettre de chaque mot en majuscule
+s.strip()          # Supprime les espaces au début et à la fin
+s.lstrip()         # Supprime les espaces au début
+s.rstrip()         # Supprime les espaces à la fin
+s.replace("P", "J")  # Remplace des sous-chaînes
+s.split()          # Divise la chaîne en une liste
+s.join(iterable)   # Joint les éléments d'une séquence en une chaîne
+s.find("thon")     # Trouve l'index de la première occurrence, sinon retourne -1
+s.index("thon")    # Comme find(), mais lance une erreur si non trouvé
+s.startswith("Py") # Vérifie si la chaîne commence par un certain motif
+s.endswith("on")   # Vérifie si la chaîne se termine par un certain motif
+s.count("o")       # Compte le nombre d'occurrences d'un sous-chaîne
+s.isalpha()        # Vérifie si tous les caractères sont des lettres
+s.isdigit()        # Vérifie si tous les caractères sont des chiffres
+s.isalnum()        # Vérifie si tous les caractères sont alphanumériques
+s.isspace()        # Vérifie si tous les caractères sont des espaces
+
+
+									
+								Méthodes des listes (list)
+
+
+lst = [1, 2, 3, 4]
+
+lst.append(5)          # Ajoute un élément à la fin
+lst.insert(1, 10)      # Insère un élément à un index spécifique
+lst.extend([6, 7, 8])  # Étend la liste avec un autre itérable
+lst.remove(3)          # Supprime la première occurrence d'un élément
+lst.pop()              # Supprime et retourne le dernier élément (ou à l'index donné)
+lst.clear()            # Vide la liste
+lst.index(2)           # Retourne l'index de la première occurrence de l'élément
+lst.count(2)           # Compte le nombre d'occurrences d'un élément
+lst.sort()             # Trie la liste en place
+lst.reverse()          # Inverse l'ordre des éléments
+lst.copy()             # Retourne une copie de la liste
+
+
+
+
+
+								Méthodes des dictionnaires (dict)
+
+
+d = {"nom": "Alice", "âge": 25}
+
+d.keys()              # Retourne une vue des clés
+d.values()            # Retourne une vue des valeurs
+d.items()             # Retourne une vue des paires clé-valeur
+d.get("nom")          # Retourne la valeur pour une clé donnée, sinon None
+d.pop("âge")          # Supprime et retourne la valeur associée à la clé
+d.popitem()           # Supprime et retourne la dernière paire clé-valeur
+d.update({"ville": "Paris"})  # Met à jour le dictionnaire avec une autre paire clé-valeur
+d.clear()             # Vide le dictionnaire
+d.copy()              # Retourne une copie du dictionnaire
+
+
+									
+
+								Méthodes des ensembles (set)
+
+s = {1, 2, 3}
+
+s.add(4)              # Ajoute un élément
+s.remove(2)           # Supprime un élément (lance une erreur si absent)
+s.discard(2)          # Supprime un élément sans erreur si absent
+s.pop()               # Supprime et retourne un élément aléatoire
+s.clear()             # Vide l'ensemble
+s.union({4, 5})       # Retourne l'union de deux ensembles
+s.intersection({2, 3})  # Retourne l'intersection de deux ensembles
+s.difference({3, 4})  # Retourne la différence entre deux ensembles
+s.issubset({1, 2, 3, 4})   # Vérifie si s est un sous-ensemble
+s.issuperset({1})     # Vérifie si s est un sur-ensemble
+s.symmetric_difference({3, 4})  # Retourne les éléments présents dans un seul des ensembles
+
+
+
+						
+								Méthodes des tuples (tuple)
+
+t = (1, 2, 3)
+
+t.count(2)            # Compte le nombre d'occurrences d'un élément
+t.index(2)            # Retourne l'index de la première occurrence d'un élément
+
+
+
+								Méthodes des fichiers (file)
+
+f = open("fichier.txt", "r")
+
+f.read()              # Lit tout le contenu du fichier
+f.readline()          # Lit une ligne du fichier
+f.readlines()         # Lit toutes les lignes et retourne une liste
+f.write("Bonjour")    # Écrit du texte dans le fichier
+f.writelines(["ligne1", "ligne2"])  # Écrit plusieurs lignes
+f.close()             # Ferme le fichier
+f.seek(0)             # Déplace le curseur à un endroit précis dans le fichier
+f.tell()              # Retourne la position actuelle du curseur
+
+
+			
+								Méthodes des objets range
+
+
+r = range(0, 10, 2)
+
+len(r)               # Retourne la longueur du range
+r.index(4)           # Retourne l'index de l'élément 4
+r.count(4)           # Compte le nombre d'occurrences de 4 dans le range
+
+
+
+								Méthodes des objets bytearray et bytes
+
+
+b = bytearray(b"abc")
+
+b.append(100)        # Ajoute un byte
+b.extend(b"def")     # Étend avec un autre bytearray ou bytes
+b.decode()           # Décode en chaîne de caractères
+b.pop()              # Supprime et retourne le dernier byte
+b.insert(1, 102)     # Insère un byte à l'index spécifié
